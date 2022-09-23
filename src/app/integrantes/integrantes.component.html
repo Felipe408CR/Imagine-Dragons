@@ -1,1 +1,15 @@
-<p>integrantes works!</p>
+<app-menu></app-menu>
+<br><br>
+<h1 class="fw-bold text-center mt-5">Integrantes</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-4 mt-5" *ngFor="let personaje of personajes">
+            <img src="{{personaje.foto}}" alt="foto" class="img-fluid w-100 foto">
+            <h1 class="text-center fw-bold mt-3">{{personaje.nombre}}</h1>
+            <h2 class="text-center fw-bold">{{personaje.edad}}</h2>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

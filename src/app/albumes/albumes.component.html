@@ -1,1 +1,16 @@
-<p>albumes works!</p>
+<app-menu></app-menu>
+<br><br>
+<h1 class="text-center fw-bold mt-5">Albumes</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-4 mt-5" *ngFor="let dato of respuestaServicio">
+            <img src="{{dato.imagenes}}" alt="foto" class="img-fluid w-100 foto">
+            <h1 class="text-center fw-bold mt-3">{{dato.nombre}}</h1>
+            <h2 class="text-center fw-bold">{{dato.numeroPersonas}} Personas</h2>
+            <h2 class="text-center fw-bold">$ {{dato.valorNoche}} COP</h2>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
