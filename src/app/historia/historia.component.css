@@ -1,0 +1,39 @@
+.banner{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/queen-5c2a4.appspot.com/o/imagine%20dragons.jpg?alt=media&token=77f87f10-dbf3-4631-8e0d-7044f9068913');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo{
+    width: calc(100vw - 20px) ;
+    height: 100vh;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Sriracha', cursive;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.texto{
+    text-align: justify;
+}
+
+.foto{
+    height: 400px;
+    width: 500px;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+.foto2{
+    height: 400px;
+    width: 500px;
+    float: right;
+    margin: 0 20px 10px 20px;
+}
