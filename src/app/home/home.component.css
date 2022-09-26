@@ -6,9 +6,13 @@
 }
 
 .imagen{
-    height: 500px;  
+    height: 500px;
 }
 
 .foto{
     height: 600px;
+}
+
+.video{
+  background-color: black;
 }

@@ -1,8 +1,18 @@
 <app-menu></app-menu>
 <br><br>
-<h1 class="text-center fw-bold mt-5">Albumes</h1>
+<h1 class="text-center fw-bold mt-5">Álbumes</h1>
 
 <div class="container">
+  <div class="row">
+    <div class="col-12 col-md-4 mt-5" *ngFor="let canciones of canciones">
+      <img src="{{canciones.album.images[0].url}}" alt="foto" class="img-fluid w-100">
+      <h1 class="fw-bold text-center">{{canciones.name}}</h1>
+      <audio src="{{canciones.preview_url}}" class="w-100" controls></audio>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
     <div class="row">
         <div class="col-12 col-md-4 mt-5" *ngFor="let dato of respuestaServicio">
             <img src="{{dato.imagenes}}" alt="foto" class="img-fluid w-100 foto">
@@ -11,6 +21,6 @@
             <h2 class="text-center fw-bold">$ {{dato.valorNoche}} COP</h2>
         </div>
     </div>
-</div>
+</div> -->
 
 <app-footer></app-footer>
